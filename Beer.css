@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+/*style the body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+/* start of page in flexbox */
+.header {
+    height: 800px;
+    padding: 60px;
+    text-align: left;
+    background-image: url(https://www.tapsandcaps.com/wp-content/uploads/2019/03/shutterstock_1212903172.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    margin-top: 300px;
+    margin-left: 50px;
+    font-size: 50px;
+    color: #d85d00;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    font-size: 30px;
+    color: #a19c9c
+}
+
+p {
+    font-size: 20px;
+    color: #a19c9c;
+    text-align: center;
+    margin-top: 55px;
+
+}
+
+/* parameters for the navbar */
+.navbar {
+    display: flex;
+    background: #282627;
+    justify-content: center;
+    position:absolute;
+    width: 100%;
+    opacity:90%;
+}
+
+.navbar a {
+    color: #d85d00;
+    padding: 14px 50px;
+    text-decoration: none;
+    text-align: center;
+    opacity: 100%;
+}
+
+.navbar a:hover {
+    background-color: #d85d00;
+    color: #282627;
+}
+
+/* code for responsive website on different viewports */
+@media screen and (max-width: 768px) {
+    .navbar, .box, .photo, .footer, .section, .header, .social1, .contactus {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar, .box, .photo, .footer, .section, .header, .contactus {
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
+
+/* main section below hero image in flexbox */
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+
+    .left {
+        flex: 50%;
+        height: 600px;
+        background-color: #1f1d1d;
+        padding: 30px;
+    }
+
+    .right {
+        flex: 50%;
+        height: 600px;
+        background-color: #1f1d1d;
+        padding: 30px;
+        width: 50%;
+        float: right;
+        
+    }
+
+    .box {
+        background-color:#474545;
+        padding: 20px;
+        height: 493px;
+        text-align: center;
+        border-radius: 15px;
+        opacity: 40%;
+        transition: 3s;
+        border-style:inset;
+        border-color: #474545;
+        border-width: 1px;
+        
+    }
+
+    .box:hover {
+        opacity: 100%;
+    }
+
+    .photo {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        opacity: 0.4;
+        border-radius: 15px;
+        border-style:inset;
+        border-color: #282627;
+        border-width: 1px;
+        
+    }
+
+    .photo:hover {
+        opacity: 1;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height:auto;
+        padding: 10px;
+        background: #d85d00;
+        color: #282627;
+        margin-top: 0px;
+    }
+
+    /* next few class tags for contact form */
+    .contactform {
+        width: 80%;
+        height: 220px;
+        margin: 1px;
+        border: 1px;
+        border-style:inset;
+        border-color:#d17026;
+        margin-left: 50px;
+        border-radius: 25px;
+        
+        
+    }
+    
+    .label {
+        height: 15px;
+        color:#282627;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin: 5px;
+        margin-top: 10px;
+        
+    }
+    
+    .inputbox {
+        border-color:#9e9995;
+        border-style:groove;
+        padding: 0px;
+        width: 80%;
+        margin: 2px;
+        border-radius: 10px;
+        height: 25px;
+        
+    }
+    
+.inputbox:focus {
+    background-color:#6e6966;
+    color: white;
+}
+
+    .submit {
+    
+        color:#d85d00;
+        background-color: #282627;
+        width:50%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 2px;
+        border-radius: 25px;
+        
+    }
+
+    #contactus {
+        font-size: 25px;
+        padding: 3px;
+        
+    
+    }
+
+    /* footer section divided into flexbox - footer class above */
+    .bleft {
+        flex: 50%;
+        background-color: #d85d00;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+       
+       
+    }
+
+    .bright {
+        flex: 50%;
+        position: relative;
+        background-color:#d85d00;
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+
+    /* buttom parameters for social media icons */
+    .social1 {
+        color: #282627;
+        position:absolute;
+        bottom:0;
+        right: 10px;
+        padding: 2px;
+        
+    }
+
+    .social2 {
+        color: #282627;
+        position:absolute;
+        bottom:0;
+        right: 45px;
+        padding: 2px;
+        
+    }
+
+    .social3 {
+        color: #282627;
+        position:absolute;
+        bottom:0;
+        right: 82px;
+        padding: 2px;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
